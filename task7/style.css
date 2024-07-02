@@ -119,6 +119,7 @@ i {
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* color: black; */
     text-decoration: none;
     padding: 10px;
     font-size: 20px;
@@ -134,6 +135,9 @@ i {
 
 label {
     display: flex;
+    /* column-gap: 30px; */
+    /* justify-content: space-between;
+    align-items: center; */
     margin-bottom: 15px;
     font-size: 20px;
     color: #555;
