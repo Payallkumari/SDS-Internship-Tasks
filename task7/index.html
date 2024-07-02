@@ -72,7 +72,6 @@
                 <label>Name: <input type="text"> </label>
                 <label>Email: <input type="email"></label>
                 <label>Message <textarea name="" id=""></textarea></label>
-
             </form>
             <button>Send</button>
     </section>
@@ -86,16 +85,11 @@
         toggleBtn.onclick = function () {
             dropDownMenu.classList.toggle(`open`)
             const isOpen = dropDownMenu.classList.contains(`open`)
-
-            tooggleBtnIcon.classList = isOpen
-                ? 'fas fa-times'
-                : 'fas fa-bars'
         }
 
         menuLinks.forEach(link => {
             link.onclick = function () {
                 dropDownMenu.classList.remove("open");
-                toggleBtnIcon.className = "fas fa-bars";
             };
         });
     </script>
