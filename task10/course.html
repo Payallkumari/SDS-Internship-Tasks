@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <header>
+        <div class="navigation">
+            <div class="logo">High Tech
+                <!-- <div class="toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </div> -->
+            </div>
+            <div class="item">
+                <a href="index.html"> Home</a>
+                <a href="course.html">Course</a>
+                <a href="dashbard.html"> Dashboard</a>
+                <a href="about.html">About</a>
+                
+                <!-- <div class="toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </div> -->
+            </div>
+        </div>
+        <!-- <div class="dropDown-menu ">
+            <a href="#Home"> Home</a>
+            <a href="#Services"> Services</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+        </div> -->
+    </header>
+    <section class="course">
+        <p>Available course</p>
+        <div class="course-card">
+            <div class="cards">
+                <div class="image">
+                    <img src="img1.jpg" alt="">
+                </div>
+                <h4>Introduction to Web Development</h4>
+                <h3>Learn the basics of HTML, CSS, and JavaScript</h3>
+                <button class="take-test-btn">Take test</button>
+            </div>
+            <div class="cards">
+                <div class="image flex-center">
+                 <p>ADV JS</p>
+                </div>
+                 <h4>Introduction to Web Development</h4>
+                 <h3>Learn the basics of html css and java script</h3>
+                 <button>Take test</button>
+               </div>
+        
+               <div class="cards">
+                <div class="image flex-center">
+               <p>  Python DS</p>
+                </div>
+                 <h4>Introduction to Web Development</h4>
+                 <h3>Learn the basics of html css and java script</h3>
+                 <button>Take test</button>
+               </div>
+        
+               <div class="cards">
+                <div class="image flex-center">
+                <p>Java Fundamentals</p>
+                </div>
+                 <h4>Introduction to Web Development</h4>
+                 <h3>Learn the basics of html css and java script</h3>
+                 <button>Take test</button>
+               </div>
+        
+               <div class="cards">
+                <div class="image flex-center">
+                  <p>ML Essentials</p>
+                </div>
+                 <h4>Introduction to Web Development</h4>
+                 <h3>Learn the basics of html css and java script</h3>
+                 <button>Take test</button>
+               </div>
+            <!-- Add other course cards similarly -->
+        </div>
+    </section>
+
+    <section id="mcq-section" class="hidden">
+        <h2>Web Development MCQs</h2>
+        <form id="mcq-form">
+            <p>1. What does HTML stand for?</p>
+            <input type="radio" name="q1" value="0"> Home Tool Markup Language<br>
+            <input type="radio" name="q1" value="1"> Hyper Text Markup Language<br>
+            <input type="radio" name="q1" value="0"> Hyperlinks and Text Markup Language<br>
+
+            <p>2. What is the correct HTML element for the largest heading?</p>
+            <input type="radio" name="q2" value="1"> &lt;h1&gt;<br>
+            <input type="radio" name="q2" value="0"> &lt;head&gt;<br>
+            <input type="radio" name="q2" value="0"> &lt;heading&gt;<br>
+
+            <p>3. What is the correct syntax for referring to an external script called "xxx.js"?</p>
+            <input type="radio" name="q3" value="0"> &lt;script href="xxx.js"&gt;<br>
+            <input type="radio" name="q3" value="1"> &lt;script src="xxx.js"&gt;<br>
+            <input type="radio" name="q3" value="0"> &lt;script name="xxx.js"&gt;<br>
+
+            <p>4. How do you write "Hello World" in an alert box?</p>
+            <input type="radio" name="q4" value="1"> alert("Hello World");<br>
+            <input type="radio" name="q4" value="0"> msg("Hello World");<br>
+            <input type="radio" name="q4" value="0"> alertBox("Hello World");<br>
+
+            <button type="button" id="submit-btn">Submit</button>
+        </form>
+        <div id="score-section" class="hidden">
+            <h2>Your Score: <span id="score"></span>/4</h2>
+            <button id="enroll-btn">Enroll</button>
+        </div>
+    </section>
+
+    <section id="form-section" class="hidden">
+        <div class="form-container">
+            <button class="close-btn">&times;</button>
+            <h2>Enrollment Form</h2>
+            <form id="enrollment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="cnic">CNIC:</label>
+                <input type="text" id="cnic" name="cnic">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone">
+                <label for="whatsapp">WhatsApp Number:</label>
+                <input type="text" id="whatsapp" name="whatsapp">
+                <button type="button" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
