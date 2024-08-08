@@ -5,29 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="css/dasboard_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <nav>
+        <div class="logo">Payal Kumari</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">My Projects</a></li>
-            <li><a href="#profile">Profile</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="login.html" id="logout">Logout</a></li>
         </ul>
     </nav>
 
     <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to your dashboard!</p>
+        <div class="portfolio">
+            <div class="description">
+                <h3>Hi, I'm Payal Kumari</h3>
+                <span>Frontend Developer</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure nulla, labore nisi beatae laboriosam commodi placeat tempora ad obcaecati pariatur quod, tempore rerum ullam fugiat expedita. Vero, ab tempora.</p>
+                <button>Hire Me</button>
+                <button>Let's Talk</button>
+                <div class="connect">
+                    <a class="fab fa-facebook"></a>
+                    <a class="fab fa-linkedin"></a>
+                    <a class="fab fa-twitter"></a>
+                </div>
+            </div>
+            <img src="m.jpg" alt="Profile Picture">
+        </div>
     </section>
+
 
     <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here are your projects.</p>
+        <h2 class="heading">My Projects</h2>
+        <div class="projects-container">
+            <div class="card">
+                <img src="img4.jpg" alt="Project 1">
+                <p>Description</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto inventore aliquam est, atque repellendus obcaecati porro sequi illum qua</p>
+            </div>
+            <div class="card">
+                <img src="img3.jpg" alt="Project 2">
+                <p>Description</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ar  atque repellendus obcaecati porro sequi illum qua</p>
+            </div>
+            <div class="card">
+                <img src="img2.jpg" alt="Project 3">
+                <p>Description</p>
+                <p>Lorem ipsum dolor, sit amet adipisicing elit. Architecto inventore aliquam est, atque repellendus obcaecati porro sequi illum qua</p>
+            </div>
+            <div class="card">
+                <img src="img1.jpg" alt="">
+                <p>Description</p>
+                <p>Lorem ipsum dolor, adipisicing elit. Architecto inventore aliquam est, atque repellendus obcaecati porro sequi illum qua</p>
+            </div>
+        </div>
     </section>
 
-    <section id="profile">
-        <h2>Profile</h2>
-        <p>Update your profile information here.</p>
+    <section id="contact">
+        <h2 class="heading">Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <script src="js/script.js"></script>

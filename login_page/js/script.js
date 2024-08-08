@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const registerForm = document.getElementById('registerForm');
     const loginForm = document.getElementById('loginForm');
     const popup = document.getElementById('popup');
+    const contactForm = document.getElementById('contactForm');
 
     if (registerForm) {
         registerForm.addEventListener('submit', (e) => {
@@ -34,6 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 showPopup('Incorrect username or password!');
             }
+        });
+    }
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Handle form submission logic here
+            alert('Message sent!');
         });
     }
 
